@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interest Calculator</title>
+	<link rel="stylesheet" href="./Interest_Calculator.css"> 
+</head>
+
+<!-- start of html -->
+<body onload="initialize()">
+	<!-- table to with textboxes to input data (of type number so a string cannot be entered) -->
+	<form id="inputForm">
+		<table id="inputTable" class="center">
+			<tr>
+				<td>		
+					<input type="number" id="startingAgeId" value="25" step="1" placeholder="Starting Age" min="1" max="99" required>
+				</td>
+				<td>
+					<input type="number" id="retirementAgeId" value="29" step="1" placeholder="Retirement Age" min="1" max="99" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="number" id="startingSalaryId" value="50000" step="any" placeholder="Starting Salary" min="0" required>
+				</td>
+				<td>
+					<input type="number" id="annualSavingsId" value="10" step="any" placeholder="Annual Savings %" min="0" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="number" id="annualRaiseId" value="2" step="0.1" placeholder="Annual Raise %" min="0" required>		
+				</td>
+				<td>
+					<input type="number" id="annualInterestRateId" value="7" step="0.1" placeholder="Annual Interest Rate %" min="0" required>
+				</td>
+			</tr>
+		</table>
+		<!-- button div containing all three buttons -->
+		<div id = "buttonDivId" class="center">
+			<button type="button" id="clear_button" onClick="clearTextBoxes(this.form)">Clear</button>
+			<button type="button" id="default_button" onClick="defaultTextBoxes(this.form)">Default</button>
+			<button type="button" id="calculate_button" onClick="calculateInterest(this.form)">Calculate Interest!</button>
+		</div>
+	</form>
+	<br>
+
+	<!-- table showing the summary of the details table -->
+	<table id="summaryTableId" class="center">
+
+	</table>
+
+	<br>
+
+	<!-- hardcoded details table -->
+	<table id="detailTableId" class="center">
+		<tr>
+			<td>Age</td>
+			<td>Salary</td>
+			<td>Savings</td>
+			<td>Interest</td>
+			<td>Retirement</td>
+		</tr>
+	</table>
+
+	<script type="text/javascript" src="./FormattingToolsLibrary.js"></script>
+	<script src="./Interest_Calculator.js"></script>
+
+</body>
+</html>

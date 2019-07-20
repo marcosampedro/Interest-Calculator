@@ -1,0 +1,55 @@
+body 						{background-color: whitesmoke;}
+/* Style for the input textboxes*/
+input[type=number] {
+		font-size: 			16px;
+		font-family: 		sans-serif;
+		text-align: 		right;
+		padding-top: 		10px;
+		padding-bottom: 	10px;
+		padding-left: 		15px;
+		width: 				14.55em;
+		border: 			2px solid lightgrey;
+		margin-bottom: 		5px;
+	}
+input:invalid 				{border: 2px solid #A00000;}
+input:valid 				{border: 2px solid #00A000;}
+input:focus:invalid 		{color:red;}
+input:focus:valid 			{color:black;}
+/* button styles*/
+button {
+		background-color: 	gainsboro;
+		font-size: 			16px;
+		font-family: 		sans-serif;
+		padding-top: 		10px;
+		padding-bottom:		10px;
+	}
+#clear_button {
+		width: 				7.5em;
+		margin-right: 		0.7em;
+	}
+#default_button {
+		width: 				7.5em;
+		margin-right: 		0.4em;
+	}
+#calculate_button {
+		width: 				15.7em;
+		margin-right: 		0.1em;
+	}
+/* In order to center the elements with a center class*/
+.center {
+		margin: 			auto;
+		display: 			table;
+	}
+table#summaryTableId {	
+		font-weight: 		bold;
+		font-family: 		monospace;
+		font-size: 			15px;
+		text-align: 		right;
+		white-space: 		pre;
+	}
+table#detailTableId {
+		font-family: 		monospace;
+		font-size: 			15px;
+		text-align: 		right;
+		width: 				58%;
+	}
