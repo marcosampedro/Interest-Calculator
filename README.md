@@ -1,4 +1,4 @@
-# Interest-Calculator
+# interest-calculator
 A program to calculate your total retirement fund over time considering your annual savings, raise and interest rate
 
 ## Usage
